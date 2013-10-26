@@ -24,6 +24,7 @@ body
 
 #page
 {
+    padding: 0 0 20px 0;
     background: #2b3043;
 }
 #page .date
@@ -76,10 +77,56 @@ body
     border-top: 1px solid #cae7f9;
     line-height: 35px;
 }
+#page .forum, #page .event{
+    width: 445px;
+    margin: 25px 0 0 0;
+}
+#page .title{
+    width: 256px;
+    height: 34px;
+    float: left;
+    background: #1b1f30;
+    margin: 1px 0 0 0;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px 0 ;
+    position: relative;
+}
+#page .slide a{
+    width: 444px;
+    height: 244px;
+    float: left;
+    position: relative;
+}
+#page .slide a img{
+    width: 444px;
+    height: 244px;
+}
+#page .slide a .overlay{
+    width: 384px;
+    height: 244px;
+    float: left;
+    top: 0;
+    position: absolute;
+    background: url('../images/overlay_03.png');
+    color: black;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 14px;
+}
+#page .slide a .overlay .desc{
+    width: 384px;
+    height: 244px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    display: table-cell;
+    vertical-align: middle;
+}
 #header
 {
     margin: 0;
-    padding: 15px 0;
+    padding: 18px 0;
     background: #151e40;
     border-bottom: 3px solid #f5eb28;
 }

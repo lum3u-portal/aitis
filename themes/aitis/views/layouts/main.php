@@ -57,6 +57,12 @@
         <div id="page">
             <?php echo $content ?>
         </div>
+        
+        <div id="">
+            <div class="container">
+                test
+            </div>
+        </div>
 
         <div id="footer">
             Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>

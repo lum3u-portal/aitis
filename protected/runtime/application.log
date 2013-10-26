@@ -3559,3 +3559,34 @@ Stack trace:
 REQUEST_URI=/aitis/themes/aitis/images/banner/banner_03.png
 HTTP_REFERER=http://localhost/aitis/id
 ---
+2013/10/26 02:38:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "themes/aitis/images/banner/slide_03.jpg"' in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/aitis/im...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\aitis\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/aitis/themes/aitis/images/banner/slide_03.jpg
+HTTP_REFERER=http://localhost/aitis/id
+---
+2013/10/26 02:50:44 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\xampp\htdocs\framework\web\helpers\CHtml.php(442): tag()
+#2 C:\xampp\htdocs\aitis\themes\aitis\views\site\index.php(34): image()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#6 C:\xampp\htdocs\framework\web\CController.php(782): SiteController->renderPartial()
+#7 C:\xampp\htdocs\aitis\protected\controllers\SiteController.php(32): SiteController->render()
+#8 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#11 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\aitis\index.php(13): CWebApplication->run()
+REQUEST_URI=/aitis/id
+in C:\xampp\htdocs\aitis\themes\aitis\views\site\index.php (34)
+in C:\xampp\htdocs\aitis\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\aitis\index.php (13)
