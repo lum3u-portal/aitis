@@ -25,118 +25,13 @@ body
 #page
 {
     padding: 0 0 20px 0;
-    background: url('../images/bg.jpg');
-}
-#page .date
-{
-    height: 84px;
-    width: 323px;
-    padding: 13px 20px 0 0;
-    background: black;
-    color: WHITE;
-    position: relative; 
-}
-#page ul
-{
-    padding: 0;
-    margin: 20px 0 0 0;
-    list-style: none;
-}
-#page ul li
-{
-    float: right;
-    margin: 0 0 0 20px;
-    cursor: pointer;
-}
-#page .logo
-{
-    width: 380px;
-    float: left;
-}
-#page .banner
-{
-    width: 570px;
-    float: right;
-    text-align: right;
-}
-#page .banner img
-{
-    border: 6px solid white;
-}
-#page .container{
-    padding: 0 0 10px 0;
-}
-#page .body-middle{
-    color: #cae7f9;
-    text-align: center;
-    font-size: 36px;
-    font-family: "impact";
-    margin: 25px 0 0 0;
-    padding: 20px 0;
-    border-bottom: 1px solid #cae7f9;
-    border-top: 1px solid #cae7f9;
-    line-height: 35px;
-}
-#page .forum, #page .event{
-    width: 445px;
-    margin: 25px 0 0 0;
-}
-#page .title{
-    width: 256px;
-    height: 34px;
-    float: left;
-    background: #1b1f30;
-    margin: 1px 0 0 0;
-    font-size: 18px;
-    color: white;
-    padding: 10px 20px 0 ;
-    position: relative;
-}
-#page .slide a{
-    width: 444px;
-    height: 244px;
-    float: left;
-    position: relative;
-}
-#page .slide a img{
-    width: 444px;
-    height: 244px;
-}
-#page .slide a .overlay{
-    width: 384px;
-    height: 0px;
-    float: left;
-    top: 0;
-    position: absolute;
-    background: url('../images/overlay_03.png');
-    color: black;
-    text-align: center;
-    padding: 0 30px;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-#page .slide a:hover .overlay{
-    height: 244px;
-}
-#page .slide a .overlay .desc{
-    width: 384px;
-    height: 0px;
-    color: black;
-    text-align: center;
-    font-size: 16px;
-    display: table-cell;
-    vertical-align: middle;
-    transition: height 0.5s;
-    font-weight: bold;
-}
-#page .slide a:hover .overlay .desc{
-    height: 244px;
+    background: #2b3043;
 }
 #header
 {
     margin: 0;
     padding: 18px 0;
-    background: #031233;
+    background: #151e40;
     border-bottom: 3px solid #f5eb28;
 }
 #header .search{
@@ -153,10 +48,16 @@ body
 #header .right.flag{
     margin: 2px 0 0 30px;
 }
-#content
+#header .container
 {
+    position: relative;
 }
-
+#header .container .logo
+{
+    float: left;
+    top: -10px;
+    position: absolute;
+}
 #sidebar
 {
     padding: 20px 20px 20px 0;
@@ -185,6 +86,7 @@ body
 #mainmenu
 {
     float: left;
+    margin: 0 0 0 150px;
 }
 
 #mainmenu ul
@@ -223,7 +125,19 @@ div.flash-error, div.flash-notice, div.flash-success
     margin-bottom:1em;
     border:2px solid #ddd;
 }
+.sidebar{
+    width: 256px;
+}
+.content{
+    width: 642px;
+}
+.content .title{
+    color: white;
+    font-size: 24px;
+}
+/*forum bisnis page*/
 
+/*forum bisnis page end*/
 div.flash-error
 {
     background:#FBE3E4;
@@ -276,6 +190,16 @@ div.breadcrumbs
 {
     font-size: 0.9em;
     padding: 5px 20px;
+    margin: 0 0 0 130px;
+    padding-top: 47px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: white;
+}
+div.breadcrumbs a
+{
+    text-decoration: none;
+    color: #e7de2a;
 }
 
 div.breadcrumbs span

@@ -34,7 +34,7 @@
             <a href="<?php echo $this->createUrl('index') ?>">
                 <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/images/slide/slide_03.jpg', '') ?>
                 <div class="overlay">
-                    <div class="desc">“ Peserta Forum Bisnis adalah para peserta pameran, kementerian terkait, pemerintah kabupaten, pemerintah provinsi dan pemerintah kota, kantor kementrian, pengusaha dalam dan luar negri, pengusaha, serta akademisi.</div>
+                    <div class="desc">" Peserta Forum Bisnis adalah para peserta pameran, kementerian terkait, pemerintah kabupaten, pemerintah provinsi dan pemerintah kota, kantor kementrian, pengusaha dalam dan luar negri, pengusaha, serta akademisi. "</div>
                 </div>
             </a>
         </div>
@@ -46,7 +46,7 @@
             <a href="<?php echo $this->createUrl('index') ?>">
                 <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/images/slide/slide_03.jpg', '') ?>
                 <div class="overlay">
-                    <div class="desc">“ Peserta Forum Bisnis adalah para peserta pameran, kementerian terkait, pemerintah kabupaten, pemerintah provinsi dan pemerintah kota, kantor kementrian, pengusaha dalam dan luar negri, pengusaha, serta akademisi.</div>
+                    <div class="desc">" Peserta Forum Bisnis adalah para peserta pameran, kementerian terkait, pemerintah kabupaten, pemerintah provinsi dan pemerintah kota, kantor kementrian, pengusaha dalam dan luar negri, pengusaha, serta akademisi. "</div>
                 </div>
             </a>
         </div>

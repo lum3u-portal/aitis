@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/ie.css" media="screen, projection" />
         <![endif]-->
 
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/main02.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/form.css" />
 
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
@@ -22,6 +22,7 @@
     <body>
         <div id="header">
             <div class="container">
+                <div class="logo"><?php echo CHtml::image(Yii::app()->theme->baseUrl . '/images/logo/logo_03.jpg', '') ?></div>
                 <div id="mainmenu">
                     <?php
                     $this->widget('zii.widgets.CMenu', array(
@@ -55,7 +56,14 @@
             </div>
         </div><!-- header -->
         <div id="page">
-            <?php echo $content ?>
+            <div class="container">
+                <?php
+                $this->widget('zii.widgets.CBreadcrumbs', array(
+                    'links' => $this->breadcrumbs,
+                ));
+                ?><!-- breadcrumbs -->
+                <?php echo $content ?>
+            </div>
         </div>
         <div id="client">
             <div class="container" style="text-align: center;">
@@ -87,5 +95,5 @@
             </div>
         </div><!-- footer -->
     </body>
-    
+
 </html>
