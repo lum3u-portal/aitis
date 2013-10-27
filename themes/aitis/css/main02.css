@@ -25,7 +25,7 @@ body
 #page
 {
     padding: 0 0 20px 0;
-    background: #2b3043;
+    background: url('../images/bg.jpg');
 }
 #header
 {
@@ -125,19 +125,147 @@ div.flash-error, div.flash-notice, div.flash-success
     margin-bottom:1em;
     border:2px solid #ddd;
 }
+.yellow{
+    color: #e7de2a;
+}
 .sidebar{
     width: 256px;
 }
 .content{
     width: 642px;
 }
-.content .title{
+.content h1{
     color: white;
     font-size: 24px;
+    border-top: 2px solid #929292;
+    padding-top: 13px;
+    margin: 0 0 57px 0;
 }
+.sidebar h2{
+    color: white;
+    margin: -7px 0 15px 0;
+    font-size: 18px;
+}
+.sidebar .forum-bisnis{
+    margin: 0px 0 0px 0;
+    padding: 0 0 40px 15px;
+    list-style-image: url('../images/list_03.png');
+}
+.sidebar .forum-bisnis li{
+    margin: 0px 0 15px 0;
+}
+.sidebar .forum-bisnis li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.sidebar form .row input{
+    width: 100%;
+    border-top: none;
+    border-right: none;
+} 
+.sidebar form .row textArea{
+    width: 100%;
+    border-top: none;
+    border-right: none;
+} 
+.sidebar form .row.buttons input{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: #b80000;
+    color: white;
+    cursor: pointer;
+} 
+.sidebar form .row.buttons input:active{
+    padding: 5px 19px;
+    width: 100px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+} 
+.sidebar form .row a{
+    color: white;
+    margin: 0 0 0 10px;
+} 
 /*forum bisnis page*/
-
+.forum-list{
+    float: left;
+    margin: 0 0 45px 0;
+}
+.forum-list .title{
+    float: left;
+    width: 377px;
+    height: 78px;
+    padding: 26px 20px 0 ;
+    font-size: 20px;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.forum-list .img{
+    float: left;
+    width: 225px;
+    height: 104px;
+}
 /*forum bisnis page end*/
+/*forum bisnis detail page*/
+.forum-detail img{
+    float: left;
+    border: 5px solid white;
+    margin: 0 0 34px 0;
+}
+.forum-detail .list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    width: 100%
+}
+.forum-detail .list li{
+    background: #d2232a;
+    padding: 11px 0px;
+    font-size: 14px;
+    color: white;
+    margin: 0 0 21px 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+/*forum bisnis detail page end*/
+/*pameran page*/
+.pameran{
+    width: 100%;
+    float: left;
+    margin: 0 0 10px 0;
+}
+.pameran .paging{
+    color: white;
+    text-align: center;
+}
+.pameran img{
+    float: left;
+    border: 3px solid white;
+    margin: 0 0 49px 0;
+}
+.pameran .list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    width: 105%
+}
+.pameran .list li{
+    margin: 0 15px 15px 0;
+    float: left;
+    width: 202px;
+    height:136px;
+}
+.pameran .list li img{
+    width: 202px;
+    height:136px;
+}
+/*forum bisnis detail page end*/
 div.flash-error
 {
     background:#FBE3E4;

@@ -26,11 +26,11 @@
                     <?php
                     $this->widget('zii.widgets.CMenu', array(
                         'items' => array(
-                            array('label' => 'Beranda', 'url' => array('/site/index')),
-                            array('label' => 'Tentang Aitis', 'url' => array('/site/page', 'view' => 'about')),
-                            array('label' => 'Event Report', 'url' => array('/site/contact')),
-                            array('label' => 'Registrasi', 'url' => array('/site/page', 'view' => 'about')),
-                            array('label' => 'Kontak', 'url' => array('/site/contact')),
+                            array('label' => Yii::t('app', 'Beranda'), 'url' => array('/site/index')),
+                            array('label' => Yii::t('app', 'Tentang Aitis'), 'url' => array('/site/page', 'view' => 'about')),
+                            array('label' => Yii::t('app', 'Event Report'), 'url' => array('/site/contact')),
+                            array('label' => Yii::t('app', 'Registrasi'), 'url' => array('/site/page', 'view' => 'about')),
+                            array('label' => Yii::t('app', 'Kontak'), 'url' => array('/site/contact')),
                         ),
                     ));
                     ?>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <?php echo CHtml::textField('cari', '', array('class' => 'search', 'placeholder' => 'Cari...')) ?>
+                    <?php echo CHtml::textField(Yii::t('app','cari'), '', array('class' => 'search', 'placeholder' => Yii::t('app','Cari...'))) ?>
                 </div>
             </div>
         </div><!-- header -->
@@ -87,5 +87,5 @@
             </div>
         </div><!-- footer -->
     </body>
-    
+
 </html>

@@ -22,13 +22,13 @@
 </div><!-- page -->
 <div class="container">
     <div class="body-middle">
-        MENGANTAR ANDA KE SUMBER POTENSI BISNIS <br/>DI DAERAH KABUPATEN
+        <?php echo Yii::t('app','MENGANTAR ANDA KE SUMBER POTENSI BISNIS <br/>DI DAERAH KABUPATEN') ?>
     </div>
     <div class="clear"></div>
 </div><!-- page -->
 <div class="container">
     <div class="forum left">
-        <div class="title">FORUM BISNIS AITIS</div>
+        <div class="title"><?php echo Yii::t('app','FORUM BISNIS AITIS') ?></div>
         <div class="title-img"><?php echo CHtml::image(Yii::app()->theme->baseUrl . '/images/img-title_03.png', '') ?></div>
         <div class="slide">
             <a href="<?php echo $this->createUrl('index') ?>">
@@ -40,7 +40,7 @@
         </div>
     </div>
     <div class="event right">
-        <div class="title">PAMERAN AITIS</div>
+        <div class="title"><?php echo Yii::t('app','PAMERAN AITIS') ?></div>
         <div class="title-img"><?php echo CHtml::image(Yii::app()->theme->baseUrl . '/images/img-title_03.png', '') ?></div>
         <div class="slide">
             <a href="<?php echo $this->createUrl('index') ?>">

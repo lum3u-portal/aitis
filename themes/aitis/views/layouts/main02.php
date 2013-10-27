@@ -27,11 +27,11 @@
                     <?php
                     $this->widget('zii.widgets.CMenu', array(
                         'items' => array(
-                            array('label' => 'Beranda', 'url' => array('/site/index')),
-                            array('label' => 'Tentang Aitis', 'url' => array('/site/page', 'view' => 'about')),
-                            array('label' => 'Event Report', 'url' => array('/site/contact')),
-                            array('label' => 'Registrasi', 'url' => array('/site/page', 'view' => 'about')),
-                            array('label' => 'Kontak', 'url' => array('/site/contact')),
+                            array('label' => Yii::t('app','Beranda'), 'url' => array('/site/index')),
+                            array('label' => Yii::t('app','Tentang Aitis'), 'url' => array('/site/page', 'view' => 'about')),
+                            array('label' => Yii::t('app','Event Report'), 'url' => array('/site/contact')),
+                            array('label' => Yii::t('app','Registrasi'), 'url' => array('/site/page', 'view' => 'about')),
+                            array('label' => Yii::t('app','Kontak'), 'url' => array('/site/contact')),
                         ),
                     ));
                     ?>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <?php echo CHtml::textField('cari', '', array('class' => 'search', 'placeholder' => 'Cari...')) ?>
+                    <?php echo CHtml::textField(Yii::t('app','cari'), '', array('class' => 'search', 'placeholder' => Yii::t('app','Cari...'))) ?>
                 </div>
             </div>
         </div><!-- header -->
@@ -63,6 +63,70 @@
                 ));
                 ?><!-- breadcrumbs -->
                 <?php echo $content ?>
+
+                <div class="sidebar right">
+                    <h2><?php echo Yii::t('app','Forum Bisnis') ?> <span class="yellow">>></span></h2>
+                    <ul class="forum-bisnis">
+                        <li><?php echo CHtml::link(Yii::t('app','Indonesia Energy and Mining')) ?></li>
+                        <li><?php echo CHtml::link(Yii::t('app','Indonesia Agri')) ?></li>
+                        <li><?php echo CHtml::link(Yii::t('app','Indonesia Tourism')) ?></li>
+                        <li><?php echo CHtml::link(Yii::t('app','Indonesia Infrastructure')) ?></li>
+                    </ul>
+                    <h2><?php echo Yii::t('app','Pameran') ?> <span class="yellow">>></span></h2>
+                    <h2>Registrasi Online <span class="yellow">>></span></h2>
+                    <div class="form">
+                        <?php
+                        $model = new ContactForm;
+                        $form = $this->beginWidget('CActiveForm', array(
+                            'id' => 'contact-form',
+                            'enableClientValidation' => true,
+                            'clientOptions' => array(
+                                'validateOnSubmit' => true,
+                            ),
+                        ));
+                        ?>
+
+                        <div class="row">
+                            <?php echo $form->textField($model, 'name'); ?>
+                            <?php echo $form->error($model, 'name'); ?>
+                        </div>
+
+                        <div class="row">
+                            <?php echo $form->textField($model, 'email'); ?>
+                            <?php echo $form->error($model, 'email'); ?>
+                        </div>
+
+                        <div class="row">
+                            <?php echo $form->textField($model, 'subject', array('size' => 60, 'maxlength' => 128)); ?>
+                            <?php echo $form->error($model, 'subject'); ?>
+                        </div>
+
+                        <div class="row">
+                            <?php echo $form->textArea($model, 'body', array('rows' => 6, 'cols' => 50)); ?>
+                            <?php echo $form->error($model, 'body'); ?>
+                        </div>
+
+                        <?php if (CCaptcha::checkRequirements()): ?>
+                            <div class="row">
+                                <div>
+                                    <?php $this->widget('CCaptcha'); ?>
+                                    <?php echo $form->textField($model, 'verifyCode'); ?>
+                                </div>
+                                <div class="hint">Please enter the letters as they are shown in the image above.
+                                    <br/>Letters are not case-sensitive.</div>
+                                <?php echo $form->error($model, 'verifyCode'); ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <div class="row buttons">
+                            <?php echo CHtml::submitButton(Yii::t('app','Submit')); ?>
+                        </div>
+
+                        <?php
+                        $this->endWidget();
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="client">

@@ -1,7 +1,9 @@
 <?php
 
 class SiteController extends Controller {
-    public $layout='//layouts/main02';
+
+    public $layout = '//layouts/main02';
+
     public function actions() {
         return array(
             'captcha' => array(
@@ -15,12 +17,20 @@ class SiteController extends Controller {
     }
 
     public function actionIndex() {
-        $this->layout='//layouts/main';
+        $this->layout = '//layouts/main';
         $this->render('index');
     }
 
     public function actionForum_bisnis() {
         $this->render('forum_bisnis');
+    }
+
+    public function actionForum_bisnis_detail() {
+        $this->render('forum_bisnis_detail');
+    }
+
+    public function actionPameran() {
+        $this->render('pameran');
     }
 
     public function actionError() {
